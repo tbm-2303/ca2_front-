@@ -1,5 +1,5 @@
-import { useParams, useNavigate } from "react-router-dom"
-import { Link } from 'react-router-dom'
+import {  useNavigate } from "react-router-dom"
+
 
 const End = ({ quiz }) => {
     const navigate = useNavigate()
@@ -17,8 +17,7 @@ const End = ({ quiz }) => {
                             <p className="final-result">{quiz.totalCorrect}</p>
                             <p>wrong answers:</p>
                             <p className="final-result">{quiz.totalIncorrect}</p>
-                            <button onClick={navigate('/')}> </button> {/* does this work. dunno yet. if not then just make <Link to='/'> go back </Link>   */}
-                            
+                            <button onClick={()=> navigate('/')}>GO BACK </button> 
                         </div>
                     );
                 } 
